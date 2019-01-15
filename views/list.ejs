@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>liste clients</title>
+        <link type="text/css" rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <div class="container">
+                <h1>Liste des clients </h1>
+
+                <ul>
+                <% clients.forEach(function(client, index) { %>
+                    <li><%= client.name %></li>
+                <% }); %>
+                </ul>
+                <a href="index" >Retour à l'accueil</a>
+        </div>
+    </body>
+</html>
